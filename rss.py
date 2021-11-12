@@ -9,13 +9,13 @@ from pyrogram.errors import FloodWait
 from apscheduler.schedulers.background import BackgroundScheduler
 from config import Config
 
-api_id = Config.14004199
-api_hash = Config.cc2af30267df60c87bb95b2fe6315aa2
-feed_urls = Config.https://subsplease.org/rss/?t&r=720
-bot_token = Config.2146356949:AAHUWOT0m_8vHN3oayO2gH5k-6wUplqz6rw
-log_channel = Config.1001587828312
-check_interval = Config.INTERVAL
-max_instances = Config.MAX_INSTANCES
+api_id = Config.
+api_hash = Config.
+feed_urls = Config.
+bot_token = Config.
+log_channel = Config.
+check_interval = Config.
+max_instances = Config.
 
 for feed_url in feed_urls:
     if db.get_link(feed_url) == None:
