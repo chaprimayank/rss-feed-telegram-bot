@@ -9,13 +9,13 @@ from pyrogram.errors import FloodWait
 from apscheduler.schedulers.background import BackgroundScheduler
 from config import Config
 
-api_id = Config.
-api_hash = Config.
-feed_urls = Config.
-bot_token = Config.
-log_channel = Config.
-check_interval = Config.
-max_instances = Config.
+api_id = Config.API_ID
+api_hash = Config.API_HASH
+feed_urls = Config.FEED_URLS
+bot_token = Config.BOT_TOKEN
+log_channel = Config.LOG_CHANNEL
+check_interval = Config.INTERVAL
+max_instances = Config.MAX_INSTANCES
 
 for feed_url in feed_urls:
     if db.get_link(feed_url) == None:
